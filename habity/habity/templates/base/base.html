@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{% block title %}Habity{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base/header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base/footer.css' %}">
+    {% block styles %}
+    {% endblock %}
+</head>
+<body>
+    {% include 'base/header.html' %}
+    <main>
+        {% include 'base/messages.html' %}
+        {% block content %}{% endblock %}
+    </main>
+
+    {% load tz %}
+    {% include 'base/footer.html' %}
+    {% block scripts %}{% endblock %}
+</body>
+</html>

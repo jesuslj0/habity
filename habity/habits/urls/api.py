@@ -1,5 +1,5 @@
 from rest_framework.routers import DefaultRouter
-from .views import HabitViewSet
+from habits.views.habits import HabitViewSet
 
 router = DefaultRouter()
 router.register("habits", HabitViewSet, basename="habits")

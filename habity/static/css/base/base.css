@@ -1,0 +1,33 @@
+/* Variables globales */
+:root {
+    --bg-color: #fff;
+    --bg-dark-color: #252525;
+
+    --bg-header-color: #333;
+    --bg-footer-color: #333;
+
+    --bg-card-color: #2c2c2c;
+    --text-primary-color: #fff;
+    --text-secondary-color: #ccc;
+
+    --enfasis-color:  rgb(82, 202, 206);
+
+    --light-grey: #d6d6d6;
+    --card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-dark-color);
+    color: var(--text-primary-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex-grow: 1;
+}

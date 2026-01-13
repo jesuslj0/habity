@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+
+{% block title %}Hábitos{% endblock %}
+{% block content %}
+    <h1>Hábitos</h1>
+    <ul>
+        {% for habit in object_list %}
+            <li>
+                <a href="#">{{ habit.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

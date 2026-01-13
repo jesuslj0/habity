@@ -1,0 +1,18 @@
+<header>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <a href="{% url 'habit_list' %}"><strong>Habity</strong></a>
+        </div>
+
+        <div class="nav-right">
+            {% if user.is_authenticated %}
+                <a href="{% url 'habit_list' %}">Hábitos</a>
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+                <a href="{% url 'logout' %}">Salir</a>
+            {% else %}
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'register' %}">Registro</a>
+            {% endif %}
+        </div>
+    </nav>
+</header>

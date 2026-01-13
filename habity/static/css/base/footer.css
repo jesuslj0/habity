@@ -1,0 +1,17 @@
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--bg-footer-color);
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav a {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+    margin-left: 10px;
+}

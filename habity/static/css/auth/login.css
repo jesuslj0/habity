@@ -1,0 +1,76 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto auto;
+    padding: 20px;
+    max-width: 400px;
+    height: fit-content;
+    background-color: var(--bg-card-color);
+    border-radius: 16px;
+    margin-top: 50px;
+    box-shadow: var(--card-shadow);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 80%;
+}
+
+p {
+    position: relative;
+    width: 90%;
+}
+
+p > a {
+    color: var(--enfasis-color)
+}
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid var(--enfasis-color);
+    background-color: var(--bg-card-color);
+    color: var(--text-primary-color);
+}
+
+label {
+    color: var(--text-secondary-color);
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+}
+
+.login-form button[type="submit"] {
+    background-color: var(--enfasis-color);
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    color: var(--text-primary-color);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+span.helptext {
+    color: var(--text-secondary-color);
+    font-size: 12px;
+}
+
+form > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: var(--text-secondary-color);
+    font-size: 12px;
+    gap: 5px;
+}

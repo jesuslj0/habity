@@ -1,0 +1,23 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--bg-header-color);
+}
+
+.nav-left > a {
+    color: var(--text-primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-right > a {
+    color: var(--text-primary-color);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    filter: brightness(0.8);
+}

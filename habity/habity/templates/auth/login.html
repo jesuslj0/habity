@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+{% block styles %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/auth/login.css' %}">
+{% endblock %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="main-container">
+    <h2>Login</h2>
+    <form method="post" class="login-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="{% url 'register' %}">Sign up</a></p>
+    </form>
+</div>
+{% endblock %}
+{% block scripts %}
+    <script>
+        const usernameLabel = document.querySelector('label[for="id_username"]');
+        const passwordLabel = document.querySelector('label[for="id_password"]');
+        usernameLabel.textContent = 'Username';
+        passwordLabel.textContent = 'Password';
+
+        const usernameInput = document.querySelector('input[name="username"]');
+        const passwordInput = document.querySelector('input[name="password"]');
+        usernameInput.placeholder = 'e.g. John';
+        passwordInput.placeholder = 'e.g. password123';
+
+    </script>
+{% endblock %}
