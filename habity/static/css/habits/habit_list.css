@@ -1,0 +1,47 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 50px;
+    width: 100%;
+    height: auto;
+}
+
+.habit-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    height: 100%;
+    list-style: none;
+    gap: 20px;
+}
+
+.habit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+    background-color: var(--bg-card-color);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+}
+
+.habit-item > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0px 10px 1px;
+}
+
+.habit-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+

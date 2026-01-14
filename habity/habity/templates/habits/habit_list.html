@@ -1,13 +1,24 @@
 {% extends 'base/base.html' %}
+{% block styles %}
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/habits/habit_list.css' %}">
+{% endblock %}
 
-{% block title %}Hábitos{% endblock %}
+{% block title %}Habits{% endblock %}
 {% block content %}
-    <h1>Hábitos</h1>
-    <ul>
+<div class="main-container">
+    <h1>Your Daily Habits</h1>
+    <nav class="habit-nav">
+        <a class="btn" href="{% url 'habit_create' %}">New Habit</a>
+    </nav>
+    <ul class="habit-list">
         {% for habit in object_list %}
-            <li>
-                <a href="#">{{ habit.name }}</a>
+            <li class="habit-item">
+                <h2>{{ habit.name }}</h2>
+                <p>{{ habit.description }}</p>
+                <a class="btn" href="{% url 'habit_detail' habit.id %}">View Details</a>
             </li>
         {% endfor %}
     </ul>
+</div>
 {% endblock %}

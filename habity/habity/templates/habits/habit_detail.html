@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+{% block styles %}
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/habits/habit_detail.css' %}">
+{% endblock %}
+{% block title %}Habit Details{% endblock %}
+{% block content %}
+<div class="main-container">
+    <h1>{{ habit.name }} {% if habit.is_active %}<div class="active"></div>{% endif %}</h1>
+    <p><span>Description:</span> {{ habit.description }}</p>
+</div>
+<p><a class="btn return-btn" href="{% url 'habit_list' %}">Back to Habits</a></p>
+{% endblock %}

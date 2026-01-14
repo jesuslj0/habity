@@ -10,7 +10,9 @@
     --text-primary-color: #fff;
     --text-secondary-color: #ccc;
 
-    --enfasis-color:  rgb(82, 202, 206);
+    --enfasis-color:  rgb(95, 181, 207);
+    --button-color: rgba(95, 181, 207, 0.8);
+    --active-color: rgb(55, 206, 55);
 
     --light-grey: #d6d6d6;
     --card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -30,4 +32,28 @@ body {
 
 main {
     flex-grow: 1;
+}
+
+h1 {
+  font-family: 'Lora';
+  font-size: 32px;
+  font-weight: normal;
+  color: var(--enfasis-color);
+}
+
+h2 {
+    font-family: 'Delius';
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--text-primary-color);
+}
+
+p, span, li, a {
+    font-family: 'Raleway';
+    font-weight: normal;
+    color: var(--text-primary-color);
+}
+
+a {
+    text-decoration: none;
 }
